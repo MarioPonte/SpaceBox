@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+.number{
+	margin-top:200px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#counter{
+	font-size: 200px;
+}
+
+th {
+  background-color: #310096;
+  padding:15px;
+  font-size: 15px;
+}
+
+td {
+  background-color: #5300ff;
+  padding:10px;
+}
+
+#tabela{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-table{
+	border-collapse: collapse;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-radius: 10px 10px 0px 0px;
+	overflow:hidden;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content-table tr{
+	border-bottom: 1px solid #310096;
+}
+
+.content-table tr:last-of-type {
+	border-bottom: 5px solid #310096;
+}
+
