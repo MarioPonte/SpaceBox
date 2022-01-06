@@ -14,4 +14,14 @@ body{
 
 .bg-card{
 	background-color: #330099;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-light{
+	transition-duration: 0.3s;
+}
+
+.btn-light:hover{
+	background-color: #531fbb;
+	color:white;
 }

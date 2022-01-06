@@ -9,7 +9,13 @@ var data = new Date();
 var ano = data.getFullYear();
 var mes = data.getMonth()+1;
 var dia = String(data.getDate()).padStart(2,'0');
-var dataPadrao = ano + '-' + mes + '-' + dia;
+var dataPadrao = '';
+
+if(mes<10){
+	dataPadrao = ano + '-' + '0' + mes + '-' + dia;
+}else{
+	dataPadrao = ano + '-' + mes + '-' + dia;
+}
 
 document.getElementById("dateSearch").max = dataPadrao;
 document.getElementById("dateSearch").min = '1995-06-20';
@@ -48,11 +54,13 @@ let xmlhttp = new XMLHttpRequest();
 					  class="bg-image hover-overlay ripple shadow-1-strong rounded"
 					  data-mdb-ripple-color="light"
 					>
+					<a href="` + url + `" target="_blank" >
 					  <img
 					  id="wrapper-image"
 						src="" 
 						class="w-100" 
 					  />
+					</a>
 					  <a id="wrapper-hdurl" href="" target="_blank">
 						<div 
 						  class="mask" 

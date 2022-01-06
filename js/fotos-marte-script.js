@@ -9,6 +9,27 @@ function getDate() {
 	return document.getElementById('dateSearch').value;
 }
 
+// Data atual
+
+var data = new Date();
+var ano = data.getFullYear();
+var mes = data.getMonth()+1;
+var dia = String(data.getDate()).padStart(2,'0');
+var dataPadrao = '';
+
+if(mes<10){
+	dataPadrao = ano + '-' + '0' + mes + '-' + dia;
+}else{
+	dataPadrao = ano + '-' + mes + '-' + dia;
+}
+
+console.log(dataPadrao);
+
+document.getElementById("dateSearch").max = dataPadrao;
+document.getElementById("dateSearch").min = '1995-06-20';
+
+// Função de chamada
+
 async function call() {
 	
 $('#mars-images').children("a").remove();
