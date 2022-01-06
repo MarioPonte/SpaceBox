@@ -1,7 +1,7 @@
 
 // Request api da NASA
 
-const url = "http://api.open-notify.org/astros.json";
+const url = "https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json";
 
 async function getDados() {
     const dados = await fetch(url);
