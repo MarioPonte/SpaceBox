@@ -4,12 +4,6 @@ const url = "https://fdo.rocketlaunch.live/json/launches/next/5";
 
 async function getDados() {
 	
-    if(window.jQuery){
-        alert("Jquery tá a dar");
-    }else{
-        alert("Jquery tá morto");
-    }
-	
     const dados = await fetch(url);
     const response = await dados.json();
 
