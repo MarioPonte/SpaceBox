@@ -14,12 +14,12 @@
 
 .btn-materiais{
 	margin:50px;
-	width:310px;
+	width:250px;
 	height:80px;
 	border: none;
 	border-radius: 40px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	font-size:25px;
+	font-size:20px;
 	background-color: #5400FF;
 	transition-duration: 0.4s;
 	color:white;
@@ -32,12 +32,12 @@
 
 .btn-cursos{
 	margin:50px;
-	width:310px;
+	width:250px;
 	height:80px;
 	border: none;
 	border-radius: 40px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	font-size:25px;
+	font-size:20px;
 	background-color: #5400FF;
 	transition-duration: 0.4s;
 	color:white;

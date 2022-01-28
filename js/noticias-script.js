@@ -1,6 +1,6 @@
 // Request api de noticias
 
-const url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=astronomy&api-key=ABo8Ujhx7YO9UZNW0FAAB2eCMrL5ex3v";
+const url = "https://api.spaceflightnewsapi.net/v3/articles";
 
 async function getDados() {
     const dados = await fetch(url);
@@ -8,10 +8,32 @@ async function getDados() {
 
     const pegueiDados = JSON.parse(JSON.stringify(response));
 
+    let dataISODataHora = "";
+    let dataFormatada = "";
+
     // Noticias
 
-	for (let i = 0; i < pegueiDados.response.docs.length; i++) {
-        $('#blog-post').append('<div class="blog-post"><div class="blog-post__img"><img id="news-img" src="https://www.nytimes.com/' + pegueiDados.response.docs[i].multimedia[i].url + '" alt=""></div><div class="blog-post__info"><div class="blog-post__date"><span><i class="far fa-calendar-alt"></i> ' + pegueiDados.response.docs[i].pub_date + '</span><h1 class="blog-post__title">' + pegueiDados.response.docs[i].headline.main +'</h1><p class="blog-post__text">' + pegueiDados.response.docs[i].lead_paragraph + '</p><a href="' + pegueiDados.response.docs[i].web_url + '" target="_blank" class="blog-post__cta">Read More</a></div></div></div>');
+	for (let i = 0; i < pegueiDados.length; i++) {
+        
+        dataISODataHora = new Date(pegueiDados[i].publishedAt);
+
+        if((dataISODataHora.getMonth() + 1)<10){
+            if(dataISODataHora.getMinutes()<10){
+                dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":0" + dataISODataHora.getMinutes();
+            }else{
+                dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":" + dataISODataHora.getMinutes();
+            }
+        }else{
+            if(dataISODataHora.getMinutes()<10){
+                dataFormatada = dataISODataHora.getFullYear() + "-" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":0" + dataISODataHora.getMinutes();
+            }else{
+                dataFormatada = dataISODataHora.getFullYear() + "-" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":" + dataISODataHora.getMinutes();
+            }
+        }
+
+        $('#blog-post').append('<div class="blog-post"><div class="blog-post__img"><img id="news-img" src="' + pegueiDados[i].imageUrl + '" alt=""></div><div class="blog-post__info"><div class="blog-post__date"><span><i class="far fa-calendar-alt"></i> ' + dataFormatada + '</span><h1 class="blog-post__title">' + pegueiDados[i].title +'</h1><p class="blog-post__text">' + pegueiDados[i].summary + '</p><p class="blog-post__poster"><i class="fas fa-newspaper"></i> ' + pegueiDados[i].newsSite + '</p><a href="' + pegueiDados[i].url + '" target="_blank" class="blog-post__cta">Read More</a></div></div></div>');
+
+
     }
 
 }

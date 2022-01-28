@@ -14,14 +14,19 @@
 
 #wrapper-title{
 	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
 }
 
 #wrapper-date{
 	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
 }
 
 #wrapper-explanation{
 	color:white;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #nasa-picture{

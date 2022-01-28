@@ -3,7 +3,7 @@
 const url = "https://fdo.rocketlaunch.live/json/launches/next/5";
 
 async function getDados() {
-	
+
     const dados = await fetch(url);
     const response = await dados.json();
 
