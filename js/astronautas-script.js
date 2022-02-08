@@ -14,7 +14,7 @@ async function getDados() {
 
     // Tabela de Astronautas
 	for (let i = 0; i < pegueiDados.people.length; i++) {
-		$('#tabela').append('<tr><td>' + pegueiDados.people[i].name + '</td><td>' + pegueiDados.people[i].craft + '</td></tr>');
+		$('#tabela').append('<tr translate="no"><td>' + pegueiDados.people[i].name + '</td><td>' + pegueiDados.people[i].craft + '</td></tr>');
     }
 }
 

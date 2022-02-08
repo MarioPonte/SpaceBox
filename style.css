@@ -6,13 +6,21 @@
 	margin-right:15px;
 }
 
-#brand{
+#brand-1{
 	margin-right:15px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 900px;
 	margin-top: 100px;
+}
+
+#brand-2{
+	display: none;
+}
+
+#name-2{
+	display: none;
 }
 
 #slogan{
@@ -277,5 +285,73 @@ body{
 	width: 70px;
 	text-align: center;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Media Querys */
+
+@media screen and (max-width: 991px){
+    #brand-1{
+		display: none;
+	}
+	
+	#brand-2{
+		margin-right:15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 350px;
+		margin-top: 150px;
+	}
+
+	#name-2{
+		display: block;
+		color: white;
+		font-size: 80px;
+		text-align: center;
+		font-weight: 100;
+	}
+
+	#slogan{
+		text-align:center;
+		font-family: 'Bebas Neue', cursive;
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'PT Sans', sans-serif;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size:20px;
+		animation:fadeIn 5s linear;
+	}
+}
+
+@media screen and (max-width: 400px){
+    #brand-1{
+		display: none;
+	}
+	
+	#brand-2{
+		margin-right:15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		margin-top: 150px;
+	}
+
+	#name-2{
+		display: block;
+		color: white;
+		font-size: 60px;
+		text-align: center;
+		font-weight: 100;
+	}
+
+	#slogan{
+		text-align:center;
+		font-family: 'Bebas Neue', cursive;
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'PT Sans', sans-serif;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size:20px;
+		animation:fadeIn 5s linear;
+	}
 }
 

@@ -31,7 +31,7 @@ async function getDados() {
             }
         }
 
-        $('#blog-post').append('<div class="blog-post"><div class="blog-post__img"><img id="news-img" src="' + pegueiDados[i].imageUrl + '" alt=""></div><div class="blog-post__info"><div class="blog-post__date"><span><i class="far fa-calendar-alt"></i> ' + dataFormatada + '</span><h1 class="blog-post__title">' + pegueiDados[i].title +'</h1><p class="blog-post__text">' + pegueiDados[i].summary + '</p><p class="blog-post__poster"><i class="fas fa-newspaper"></i> ' + pegueiDados[i].newsSite + '</p><a href="' + pegueiDados[i].url + '" target="_blank" class="blog-post__cta">Read More</a></div></div></div>');
+        $('#blog-post').append('<div class="blog-post"><div class="blog-post__img"><img id="news-img" src="' + pegueiDados[i].imageUrl + '" alt=""></div><div class="blog-post__info"><div class="blog-post__date"><span><i class="far fa-calendar-alt"></i> ' + dataFormatada + '</span><h1 class="blog-post__title">' + pegueiDados[i].title +'</h1><p class="blog-post__text">' + pegueiDados[i].summary + '</p><p class="blog-post__poster" translate="no"><i class="fas fa-newspaper"></i> ' + pegueiDados[i].newsSite + '</p><a href="' + pegueiDados[i].url + '" target="_blank" class="blog-post__cta" translate="no">Read More</a></div></div></div>');
 
 
     }
