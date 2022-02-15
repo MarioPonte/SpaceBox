@@ -44,17 +44,17 @@ async function getDados() {
                 if(dataISODataHora.getHours()<10){
 
                     if(dataISODataHora.getMinutes()<10){
-                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-0" + dataISODataHora.getDate() + " | 0" + dataISODataHora.getHours() + ":0" + dataISODataHora.getMinutes();
+                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | 0" + dataISODataHora.getHours() + ":0" + dataISODataHora.getMinutes();
                     }else{
-                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-0" + dataISODataHora.getDate() + " | 0" + dataISODataHora.getHours() + ":" + dataISODataHora.getMinutes();
+                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | 0" + dataISODataHora.getHours() + ":" + dataISODataHora.getMinutes();
                     }
 
                 }else{
 
                     if(dataISODataHora.getMinutes()<10){
-                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-0" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":0" + dataISODataHora.getMinutes();
+                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":0" + dataISODataHora.getMinutes();
                     }else{
-                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-0" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":" + dataISODataHora.getMinutes();
+                        dataFormatada = dataISODataHora.getFullYear() + "-0" + (dataISODataHora.getMonth() + 1) + "-" + dataISODataHora.getDate() + " | " + dataISODataHora.getHours() + ":" + dataISODataHora.getMinutes();
                     }
 
                 }
