@@ -60,6 +60,19 @@
 	color:white !important;
 }
 
+.nav-item-dropdown{
+	color: #1b1924 !important;
+}
+
+.dropdown-menu{
+	border-radius: 10px;
+}
+
+.nav-item-dropdown:hover{
+	background-color: #e2eaff;
+	border-radius: 10px;
+}
+
 #footer{
 	text-align:center;
 	margin-top: 50px;
