@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+#title{
+	margin-top: 180px;
+	text-align: center;
+	font-size: 80px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#botoes{
+	text-align: center;
+	margin-top:100px;
+}
+
+.btn-materiais{
+	margin:50px;
+	width:250px;
+	height:80px;
+	border: none;
+	border-radius: 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-size:20px;
+	background-color: #5400FF;
+	transition-duration: 0.4s;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-materiais:hover{
+	background-color: #3C00B7;
+}
+
+.btn-cursos{
+	margin:50px;
+	width:250px;
+	height:80px;
+	border: none;
+	border-radius: 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-size:20px;
+	background-color: #5400FF;
+	transition-duration: 0.4s;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-cursos:hover{
+	background-color: #3C00B7;
+}

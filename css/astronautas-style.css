@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+	background-image: url("../images/astronautas-background.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.number{
+	margin-top:200px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#counter{
+	font-size: 200px;
+	animation:fadeIn 5s linear;
+}
+
+th {
+  background-color: #310096 !important;
+  padding:15px;
+  font-size: 15px;
+  color: white !important;
+}
+
+td {
+  background-color: #5300ff !important;
+  padding:10px;
+  color: white !important;
+}
+
+#tabela{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.content-table{
+	border-collapse: collapse;
+	font-size: 0.9em;
+	border-radius: 10px 10px 0px 0px;
+	overflow:hidden;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content-table tr{
+	border-bottom: 1px solid #310096 !important;
+}
+
+.content-table tr:last-of-type {
+	border-bottom: 5px solid #310096 !important;
+}
+
+.btn-iss{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.button-iss{
+	width: 240px;
+	height: 60px;
+	border:none;
+	border-radius: 30px;
+	font-size: 20px;
+	background-color: #5300ff;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition-duration: 0.4s;
+}
+
+.button-iss:hover{
+	background-color: #4500ce;
+}
+
+/* Keyframes */
+
+@keyframes fadeIn{
+	0% {opacity:0;}
+	15% {opacity:0;}
+	100% {opacity:1;}
+}
+

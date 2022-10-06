@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#info{
+	margin-top:100px;
+}
+
+.bg-different{
+	background-color: #332d4d;
+}
+
+.bg-card{
+	background-color: #330099;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-light{
+	transition-duration: 0.3s;
+}
+
+.btn-light:hover{
+	background-color: #531fbb;
+	color:white;
+}

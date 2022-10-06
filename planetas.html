@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="theme-color" content="#300092" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#300092" />
+	
+    <title>SpaceBox</title>
+	
+	<!-- CSS -->
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/af5e23e73e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+  </head>
+  <body>
+  
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light" translate="no">
+		<div class="container-fluid">
+			<a href="index.html" class="navbar-brand"><img id="logo" src="images/logo5.png">SpaceBox</a>
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+				<i id="menu-icon" class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				
+				<div class="navbar-nav ms-auto">
+					<a href="index.html" class="nav-item nav-link"><i class="fas fa-home"></i> Home</a>
+					<a href="sobre.html" class="nav-item nav-link"><i class="fas fa-question-circle"></i> About</a>
+					<a href="noticias.html" class="nav-item nav-link"><i class="fas fa-newspaper"></i> News</a>
+					<a href="astronautas.html" class="nav-item nav-link"><i class="fas fa-user-astronaut"></i> Astronauts</a>
+					<a href="lancamentos.html" class="nav-item nav-link"><i class="fas fa-space-shuttle"></i> Launches</a>
+					<a href="planetas.html" class="nav-item nav-link"><i class="fas fa-globe-europe"></i> Planets</a>
+					<div class="dropdown">
+					  <a class="nav-item nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="fa-solid fa-book"></i> NASA Library
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a href="apod.html" class="nav-item-dropdown nav-link"><i class="fas fa-meteor"></i> APOD</a></li>
+						<li><a href="marte.html" class="nav-item-dropdown nav-link"><i class="fas fa-rocket"></i> Mars</a></li>
+						<li><a href="nasatv.html" class="nav-item-dropdown nav-link"><i class="fa-solid fa-tv"></i> NASA TV</a></li>
+					  </ul>
+					</div>
+					<a href="cursos.html" class="nav-item nav-link"><i class="fas fa-graduation-cap"></i> Courses</a>
+				</div>
+			</div>
+		</div>
+	  </nav>
+		
+			<div class="planets">
+				<h1 id="titleSolarSystem">Solar System</h1>
+				<div class="mercury"></div>
+				<h2><b>Mercury</b></h2>
+				<p>
+					Mercury is the smallest and innermost planet in the Solar System, orbiting the Sun every 87.969 Earth days. 
+					Its orbit has the greatest eccentricity and its axis has the smallest inclination to the plane of orbit of all the planets in the Solar System.
+				</p>
+				
+				<div class="venus"></div>
+				<h2><b>Venus</b></h2>
+				<p>
+					Venus is the second planet in the Solar System in order of distance from the Sun, orbiting it every 224.7 days. It was named after the Roman goddess of love and 
+					Venus, the Roman goddess of love and beauty, equivalent to Aphrodite.
+				</p>
+				
+				<div class="earth"></div>
+				<h2><b>Earth</b></h2>
+				<p>
+					Earth is the third closest planet to the Sun, the densest and the fifth largest of the eight planets in the Solar System. It is also the largest of the four telluric planets. 
+					It is sometimes referred to as the World or Blue Planet. Home to millions of species of living things, including humans, Earth is the only celestial body where life is known to exist. 
+					life is known to exist. The planet formed 4.56 billion years ago, and life appeared on its surface a billion years later. 
+					Since then, the Earth's biosphere has significantly altered the atmosphere and other abiotic factors of the planet, allowing the proliferation of aerobic organisms, 
+					as well as the formation of an ozone layer, which, together with the Earth's magnetic field, blocks harmful solar radiation, allowing life on the planet.
+					The physical properties of the planet, as well as its geological history and orbit, have allowed life to persist during this period. 
+					It is believed that the Earth will be able to support life for at least another 500 million years.
+				</p>
+				
+				<div class="mars"></div>
+				<h2><b>Mars</b></h2>
+				<p>
+					Mars is the fourth planet from the Sun, the second smallest in the Solar System. Named after the Roman god of war, 
+					it is often described as the "Red Planet" because the predominant iron oxide on its surface gives it a reddish appearance.
+				</p>
+				
+				<div class="jupiter"></div>
+				<h2><b>Jupiter</b></h2>
+				<p>
+					Jupiter is the largest planet in the Solar System, both in diameter and mass, and is the fifth closest to the Sun. It has less than one thousandth of the solar mass,
+					yet it has 2.5 times the mass of all the other planets combined. It is a gas planet, along with Saturn, Uranus, and Neptune.
+				</p>
+				
+				<div id="saturn">
+					<div class="planet bottom planet-bg"></div>
+					<div class="rings"></div>
+					<div class="planet top planet-bg"></div>
+				</div>
+				<h2><b>Saturn</b></h2>
+				<p>
+					Saturn is the sixth planet from the Sun and the second largest in the Solar System behind Jupiter. It belongs to the group of gas giants, 
+					it has about 95 Earth masses and orbits at an average distance of 9.5 astronomical units.
+				</p>
+				
+				<div class="uranus"></div>
+				<h2><b>Uranus</b></h2>
+				<p>
+					Uranus is the seventh planet from the Sun, the third largest and the fourth most massive of the eight planets in the Solar System. 
+					It was named after the Greek god of the sky, Uranus, the father of Kronos and the grandfather of Zeus.
+				</p>
+				
+				<div class="neptune"></div>
+				<h2><b>Neptune</b></h2>
+				<p>
+					Neptune is the eighth planet in the Solar System, the last from the Sun since Pluto was reclassified to the dwarf planet category in 2006. 
+					Belonging to the group of gas giants, it has a slightly smaller size than Uranus, but greater mass, equivalent to 17 Earth masses.
+				</p>
+			</div>
+	
+	<div id="footer">
+		<footer>&copy All rights reserved to Mário Ponte / SpaceBox - 2021</footer>
+	</div>
+	
+	<!-- Scripts -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="js/sobre-script.js"></script>
+
+  </body>
+</html>

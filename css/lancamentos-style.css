@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/lancamentos-background.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.missions{
+    background-color: #17004480;
+    padding: 50px;
+    margin-bottom: 40px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.glass{
+	backdrop-filter: blur(5px);
+}
+
+ul li{
+    margin: 5px;
+}
+
+/* Calendário */
+
+.div-btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-calendar{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(36, 58, 158);
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.btn-calendar:hover{
+    background-color: rgb(15, 39, 146);
+}
+
+#CalendarioWeb{
+    background-color: rgba(0, 15, 82, 0.678);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fc-today {
+    background: rgb(21, 21, 59) !important;
+}
+
+.fc-highlight {
+    background: rgba(7, 0, 41, 0.534) !important;
+}
+
+.fc-event{
+    cursor: pointer;
+}
+
+/* Modal */
+
+#exampleModal{
+    color:black !important;
+}
+
+.close{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../images/iss-background.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title{
+  font-size: 85px;
+  margin-top: 120px;
+}
+
+#description{
+  margin-bottom: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* #map */
+/* this is mandatory */
+#map-div {
+    width: 800px;
+    height: 350px;
+    box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: auto;
+  }
+  
+  /* #details */
+  #details {
+    background-color: #2B32B2;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    width: 800px;
+    max-width: 800px;
+    box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin: auto;
+  }
+  
+  /* all div inside #details */
+  #details div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto;
+  }
+  
+  /* all span */
+  span {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /* FullScreen Btn */
+
+  .fullscreen-btn{
+    margin-top: 20px;
+    background-color: transparent;
+    border:none;
+    font-size: 35px;
+    color: #2B32B2;
+  }
+
+  .fullscreen-btn:hover{
+    color: #3900d6;
+  }
+
+  /* Media Queries */
+
+  @media screen and (max-width: 992px) {
+    #content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 890px){
+    #title{
+      font-size: 50px;
+      margin-top: 120px;
+    }
+
+    #map-div {
+      width: 93.5vw;
+      height: 350px;
+      box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      margin: auto;
+    }
+    
+    /* #details */
+    #details {
+      background-color: #2B32B2;
+      padding: 10px;
+      color: #fff;
+      display: table-column;
+      width: 93.5vw;
+      max-width: 800px;
+      box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      margin: auto;
+    }
+  }

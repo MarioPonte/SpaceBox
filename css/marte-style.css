@@ -1,0 +1,87 @@
+body{
+	background-image: url("../images/mars-wallpaper.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.alpha{
+	margin-top:150px;
+	text-align: center;
+	font-size:120px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.descricao{
+	margin-top:70px;
+	text-align: center;
+}
+
+#botoes{
+	text-align: center;
+	margin-top:100px;
+}
+
+.btn-clima{
+	margin:50px;
+	width:300px;
+	height:80px;
+	border: none;
+	border-radius: 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-size:25px;
+	background-color: #FF693C;
+	transition-duration: 0.4s;
+}
+
+.btn-clima:hover{
+	background-color: #FF4B00;
+}
+
+.btn-fotos{
+	margin:50px;
+	width:300px;
+	height:80px;
+	border: none;
+	border-radius: 40px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-size:25px;
+	background-color: #FF693C;
+	transition-duration: 0.4s;
+}
+
+.btn-fotos:hover{
+	background-color: #FF4B00;
+}
+
+@media screen and (max-width: 615px){
+    .alpha{
+		margin-top:150px;
+		text-align: center;
+		font-size:60px;
+		font-family: 'Orbitron', sans-serif;
+	}
+
+	.btn-clima{
+		margin:50px;
+		width:230px;
+		height:60px;
+		border: none;
+		border-radius: 40px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		font-size:20px;
+		background-color: #FF693C;
+		transition-duration: 0.4s;
+	}
+
+	.btn-fotos{
+		margin:50px;
+		width:230px;
+		height:60px;
+		border: none;
+		border-radius: 40px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		font-size:20px;
+		background-color: #FF693C;
+		transition-duration: 0.4s;
+	}
+}

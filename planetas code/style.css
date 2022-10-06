@@ -1,0 +1,29 @@
+html{
+	background-color:black;
+}
+
+.earth{
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	background-image:url('https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73580/world.topo.bathy.200401.3x5400x2700.jpg');
+	background-size: cover;
+	box-shadow: -25px -25px 25px black inset, 10px 10px 30px white inset, 0px 0px 20px #3a96ff;
+	animation: rotate 35s linear infinite;
+	margin-bottom: 50px;
+}
+
+.mars{
+	width:270px;
+	height:270px;
+	border-radius: 50%;
+	background-image:url('https://cdn.pixabay.com/photo/2020/02/04/17/02/map-4818850_960_720.jpg');
+	background-size: cover;
+	box-shadow: -25px -25px 25px black inset, 10px 10px 30px white inset, 0px 0px 20px #FFAA72;
+	animation: rotate 35s linear infinite;
+	margin-bottom: 50px;
+}
+
+@keyframes rotate{
+	to{background-position:100%;}
+}
