@@ -1,5 +1,6 @@
-if("ServiceWorker" in navigator){
-    navigator.serviceWorker.register("sw.js").then(registration => {
+
+if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("./sw.js").then(registration => {
         console.log("sw registed");
         console.log(registration);
     }).catch(error => {
@@ -7,5 +8,5 @@ if("ServiceWorker" in navigator){
         console.log(error);
     });
 }else{
-    console.log("no");
+    console.log(navigator);
 }
