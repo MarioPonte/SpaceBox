@@ -18,6 +18,7 @@ if(mes<10){
 }
 
 document.getElementById("dateSearch").max = dataPadrao;
+document.getElementById("dateSearch").value = dataPadrao;
 document.getElementById("dateSearch").min = '1995-06-20';
 
 async function call() {

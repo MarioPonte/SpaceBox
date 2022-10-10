@@ -53,13 +53,13 @@
 
 #submit{
 	margin-left:20px;
-	font-family: 'Bebas Neue', cursive;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'PT Sans', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	width: 200px;
 	height: 50px;
-	border-radius: 10px;
+	border-radius: 100vw;
 	border: none;
 	font-size:20px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -76,9 +76,6 @@
 
 #dateSearch{
 	margin-left:20px;
-	font-family: 'Bebas Neue', cursive;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'PT Sans', sans-serif;
 	font-family: 'Source Sans Pro', sans-serif;
 	width: 300px;
 	height: 50px;
