@@ -21,90 +21,53 @@ document.getElementById("dateSearch").max = dataPadrao;
 document.getElementById("dateSearch").value = dataPadrao;
 document.getElementById("dateSearch").min = '1995-06-20';
 
-async function call() {
-	
-// Remover icone do meteoro
-
-let met = document.getElementById("meteoro");
-
-if(met != null){
-	met.remove();
-}else{
-	
-}
+async function getDados() {
 
 // Request api da NASA
-	
-let xmlhttp = new XMLHttpRequest();
+
+let queryUrl = "https://api.nasa.gov/planetary/apod?";
+let queryKey = "api_key=leWsmyC7lJSYGrpntyDmUmaenjXwR4zZKbPv4LgJ&";
+let queryDate = "date=" + getDate() + "&";
 		
-		xmlhttp.onreadystatechange = function () {
-			if (this.readyState == 4 && this.status == 200) {
-				let data = JSON.parse(this.responseText);
+let queryFull = queryUrl + queryKey + queryDate;
+
+const dados = await fetch(queryFull);
+const response = await dados.json();
+
+const pegueiDados = JSON.parse(JSON.stringify(response));
+
+let date = new Date(pegueiDados.date);
+let dateString = moment(date).format('DD-MM-YYYY');
+let explanation = pegueiDados.explanation;
+let copyright = pegueiDados.copyright;
+let hdurl = pegueiDados.hdurl;
+let media_type = pegueiDados.media_type;
+let service_version = pegueiDados.service_version;
+let title = pegueiDados.title;
+let url = pegueiDados.url;
+
+let imageType = `<div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light" > <a href="` + url + `" target="_blank" > <img id="wrapper-image" src="" class="w-100" /> </a> <a id="wrapper-hdurl" href="" target="_blank"> <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)" ></div> </a> </div> `;
 				
-				let date = new Date(data["date"]);
-				let dateString = moment(date).format('DD-MM-YYYY');
-				let explanation = data["explanation"];
-				let hdurl = data["hdurl"];
-				let media_type = data["media_type"];
-				let service_version = data["service_version"];
-				let title = data["title"];
-				let url = data["url"];
-				
-				let imageType = `
-					<div
-					  class="bg-image hover-overlay ripple shadow-1-strong rounded"
-					  data-mdb-ripple-color="light"
-					>
-					<a href="` + url + `" target="_blank" >
-					  <img
-					  id="wrapper-image"
-						src="" 
-						class="w-100" 
-					  />
-					</a>
-					  <a id="wrapper-hdurl" href="" target="_blank">
-						<div 
-						  class="mask" 
-						  style="background-color: rgba(251, 251, 251, 0.2)"
-						></div>
-					  </a>
-					</div>
-				`;
-				
-				let videoType = `
-					<div class="ratio ratio-16x9">
-						<iframe
-							id="wrapper-video"
-							src=""
-							title="YouTube video"
-							allowfullscreen
-						></iframe>
-					</div>
-				`;
-				
-				document.getElementById("wrapper-title").innerHTML = title;
-				document.getElementById("wrapper-date").innerHTML = dateString;
-				document.getElementById("wrapper-explanation").innerHTML = explanation;
-				
-				if (media_type === "video") {
-					document.getElementById("wrapper-media").innerHTML = videoType;
-					document.getElementById("wrapper-video").src = url;
-				} else {
-					document.getElementById("wrapper-media").innerHTML = imageType;
-					document.getElementById("wrapper-image").src = url;
-					document.getElementById("wrapper-hdurl").href = hdurl;
-				}
-				
-			}
-		}
-		
-		let queryUrl = "https://api.nasa.gov/planetary/apod?";
-		let queryKey = "api_key=leWsmyC7lJSYGrpntyDmUmaenjXwR4zZKbPv4LgJ&";
-		let queryDate = "date=" + getDate() + "&";
-		
-		let queryFull = queryUrl + queryKey + queryDate;
-		
-		xmlhttp.open("GET", queryFull, true);
-		xmlhttp.send();
+let videoType = `<div class="ratio ratio-16x9"> <iframe id="wrapper-video" src="" title="YouTube video" allowfullscreen ></iframe> </div> `;
+
+document.getElementById("wrapper-title").innerHTML = title;
+document.getElementById("wrapper-date").innerHTML = dateString;
+document.getElementById("wrapper-explanation").innerHTML = explanation;
+if(copyright == undefined){
+	document.getElementById("wrapper-copyright").innerHTML = "";
+}else{
+	document.getElementById("wrapper-copyright").innerHTML = "From " + copyright;
+}
+
+if (media_type === "video") {
+	document.getElementById("wrapper-media").innerHTML = videoType;
+	document.getElementById("wrapper-video").src = url;
+} else {
+	document.getElementById("wrapper-media").innerHTML = imageType;
+	document.getElementById("wrapper-image").src = url;
+	document.getElementById("wrapper-hdurl").href = hdurl;
+}
 	
 }
+
+getDados();
