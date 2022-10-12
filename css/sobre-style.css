@@ -25,3 +25,15 @@ body{
 	background-color: #531fbb;
 	color:white;
 }
+
+.social-link{
+	color: white;
+}
+
+.social-link:hover{
+	color: white;
+}
+
+.cardDev{
+	border-radius: 28px;
+}
