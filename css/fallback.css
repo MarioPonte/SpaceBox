@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+
 .offlineContent{
     margin-top: 140px;
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .offlineImg{
     width: 360px;
+}
+
+.offlineLink{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    border: 2px solid white;
+    border-radius: 100vw;
+    padding: 10px 22px 10px 22px;
+    margin: 20px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.offlineLink:hover{
+    color: #1b1924;
+    background-color: white;
 }
