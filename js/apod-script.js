@@ -50,22 +50,24 @@ let imageType = `<div class="bg-image hover-overlay ripple shadow-1-strong round
 				
 let videoType = `<div class="ratio ratio-16x9"> <iframe id="wrapper-video" src="" title="YouTube video" allowfullscreen ></iframe> </div> `;
 
-document.getElementById("wrapper-title").innerHTML = title;
-document.getElementById("wrapper-date").innerHTML = dateString;
-document.getElementById("wrapper-explanation").innerHTML = explanation;
-if(copyright == undefined){
-	document.getElementById("wrapper-copyright").innerHTML = "";
-}else{
-	document.getElementById("wrapper-copyright").innerHTML = "From " + copyright;
-}
+if(title != undefined){
+	document.getElementById("wrapper-title").innerHTML = title;
+	document.getElementById("wrapper-date").innerHTML = dateString;
+	document.getElementById("wrapper-explanation").innerHTML = explanation;
+	if(copyright == undefined){
+		document.getElementById("wrapper-copyright").innerHTML = "";
+	}else{
+		document.getElementById("wrapper-copyright").innerHTML = "From " + copyright;
+	}
 
-if (media_type === "video") {
-	document.getElementById("wrapper-media").innerHTML = videoType;
-	document.getElementById("wrapper-video").src = url;
-} else {
-	document.getElementById("wrapper-media").innerHTML = imageType;
-	document.getElementById("wrapper-image").src = url;
-	document.getElementById("wrapper-hdurl").href = hdurl;
+	if (media_type === "video") {
+		document.getElementById("wrapper-media").innerHTML = videoType;
+		document.getElementById("wrapper-video").src = url;
+	} else {
+		document.getElementById("wrapper-media").innerHTML = imageType;
+		document.getElementById("wrapper-image").src = url;
+		document.getElementById("wrapper-hdurl").href = hdurl;
+	}
 }
 	
 }
