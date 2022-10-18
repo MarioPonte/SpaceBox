@@ -3,20 +3,21 @@
 
 // Notifications
 
-function showNotification(){
+async function showNotification(){
+	const reg = await navigator.serviceWorker.getRegistration();
 
-    const dts = Math.floor(Date.now());
-
-    var data = new Date()
-	const notification = new Notification("Nova foto astronómica do dia!", {
-		body: "Foto do dia " + data.getDate() + "/" + (data.getMonth()+1) + "/" + data.getFullYear(),
-		icon: "./images/icon.png",
-		tag: "Foto",
-	});
-
-	notification.onclick = (e) => {
-		window.location.href = "apod.html";
-	}
+    const timestamp = new Date().getTime() + 5 * 1000; // now plus 5000ms
+      reg.showNotification(
+        'Demo Push Notification',
+        {
+          tag: timestamp, // a unique ID
+          body: 'Hello World', // content of the push notification
+		  showTrigger: new TimestampTrigger(timestamp), // set the time for the push notification
+          data: {
+            url: window.location.href, // pass the current url to the notification
+          },
+        }
+      );
 }
 
 console.log(Notification.permission);
