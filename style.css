@@ -287,15 +287,15 @@ body{
 }
 
 #btn-scroll-up{
-	font-size:50px;
+	font-size:28px;
 	position: fixed;
     bottom: 40px;
     right: 40px;
 	background-color: #300092;
 	color:white;
-	border-radius: 50%;
-	height: 70px;
-	width: 70px;
+	border-radius: 100vw;
+	height: 40px;
+	width: 40px;
 	text-align: center;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
