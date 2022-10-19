@@ -8,14 +8,16 @@ async function showNotification(){
 
     const timestamp = new Date().getTime() + 5 * 1000; // now plus 5000ms
       reg.showNotification(
-        'Demo Push Notification',
+        'Nova foto astronómica do dia!',
         {
-          tag: timestamp, // a unique ID
-          body: 'Hello World', // content of the push notification
-		  showTrigger: new TimestampTrigger(timestamp), // set the time for the push notification
+          tag: 'apodNotification', // a unique ID
+          body: 'Foto do dia 19/10/2022', // content of the push notification
+		      //showTrigger: new TimestampTrigger(timestamp),
           data: {
             url: window.location.href, // pass the current url to the notification
           },
+          icon: './images/icon.png',
+          timeout: 4000,
         }
       );
 }
