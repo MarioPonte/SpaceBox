@@ -19,3 +19,7 @@ self.addEventListener("fetch", e => {
         }).catch(() => caches.match("fallback.html"))
     );
 });
+
+self.addEventListener('notificationclick', event => {
+    event.waitUntil(clients.openWindow('apod.html'));
+});
