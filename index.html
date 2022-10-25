@@ -41,6 +41,19 @@
         };
 
         firebase.initializeApp(firebaseConfig);
+
+        const messaging = firebase.messaging();
+
+        function initializeFireBaseMessaging(){
+          messaging.requestPermission().then(function (value){
+            console.log("Notification permission");
+          }).then(function (token){
+            console.log("Token: " + token);
+          }).catch(function (reason){
+            console.log(reason);
+          })
+        }
+
       </script>
 
 </head>
