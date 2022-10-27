@@ -1,6 +1,3 @@
-
-
-
 // Notifications
 
 async function showNotification(){
@@ -34,8 +31,6 @@ async function showNotification(){
 
       
 }
-
-console.log(Notification.permission);
 
 if(Notification.permission === "granted"){
 	showNotification();
