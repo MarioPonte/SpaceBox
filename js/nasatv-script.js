@@ -13,7 +13,10 @@ const response = await dados.json();
 
 const pegueiDados = JSON.parse(JSON.stringify(response));
 
-console.log(pegueiDados);
+for(let i=0; i<pegueiDados.items.length; i++){
+    //console.log(pegueiDados.items[i].snippet.thumbnails.high.url)
+    document.getElementById("nasaVideos").innerHTML += '<div class="videoCard"><img class="videoImg" src="' + pegueiDados.items[i].snippet.thumbnails.high.url + '" alt="" srcset=""><p class="videoTitle">' + pegueiDados.items[i].snippet.title + '</p></div>'
+}
 	
 }
 

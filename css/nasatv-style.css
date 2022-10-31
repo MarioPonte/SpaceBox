@@ -21,6 +21,28 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.nasaVideosSec{
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #31009244;
+}
+
+.videoCard{
+    text-align: center;
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.videoTitle{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.videoImg{
+    width: 200px;
+}
+
 /* Media Querys */
 
 @media only screen and (max-width: 760px) {
