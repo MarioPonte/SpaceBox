@@ -21,6 +21,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.channelTitle{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
 .nasaVideosSec{
     margin-top: 50px;
     padding: 25px;
@@ -29,10 +35,19 @@ body{
 
 .videoCard{
     text-align: center;
-    width: 220px;
+    width: 240px;
     display: inline-block;
     margin: 10px;
     cursor: pointer;
+}
+
+.videoLink{
+    color: white;
+    text-decoration: none;
+}
+
+.videoLink:hover{
+    color: white;
 }
 
 .videoTitle{
@@ -41,7 +56,13 @@ body{
 }
 
 .videoImg{
-    width: 200px;
+    width: 220px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.row {
+    margin-top: 50px !important;
 }
 
 /* Media Querys */
