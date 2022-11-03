@@ -29,3 +29,7 @@
     # Enter directory
     $ cd SpaceBox
 ```
+
+## 📜 License
+
+SpaceBox is under the MIT License. See the file [LICENSE](https://github.com/MarioPonte/SpaceBox/blob/main/LICENSE) for more details.
