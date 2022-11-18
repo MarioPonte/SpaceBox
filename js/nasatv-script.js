@@ -14,7 +14,7 @@ const response = await dados.json();
 const pegueiDados = JSON.parse(JSON.stringify(response));
 
 for(let i=0; i<pegueiDados.items.length; i++){
-    document.getElementById("nasaVideos").innerHTML += '<div class="col-sm videoCard"><a class="videoLink" href="https://www.youtube.com/watch?v=' + pegueiDados.items[i].id.videoId + '" target="_Blank"><img class="videoImg" src="' + "http://img.youtube.com/vi/" + pegueiDados.items[i].id.videoId + "/maxresdefault.jpg" + '" alt="" srcset=""><p class="videoTitle">' + pegueiDados.items[i].snippet.title + '</p></a></div>'
+    document.getElementById("nasaVideos").innerHTML += '<div class="col-sm videoCard"><a class="videoLink" href="https://www.youtube.com/watch?v=' + pegueiDados.items[i].id.videoId + '" target="_Blank"><img class="videoImg" src="' + "https://img.youtube.com/vi/" + pegueiDados.items[i].id.videoId + "/maxresdefault.jpg" + '" alt="" srcset=""><p class="videoTitle">' + pegueiDados.items[i].snippet.title + '</p></a></div>';
 }
 	
 }
